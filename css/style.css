@@ -1,0 +1,46 @@
+body {
+	background-color: #F1D3BC;
+}
+
+
+.container {
+	background-color: #F34a4a;
+	width: 500px;
+	border: 5px solid #615049;
+	border-radius: 25px;
+}
+
+.fa-shopping-basket, .fa-shopping-bag {
+	font-size: 10px;
+	color: #f1d3bc;
+}
+
+
+
+h1 {
+	text-transform: uppercase;
+	background-color: 615049;
+	color: #f1d3bc;
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	padding: 30px;
+}
+
+h5 {
+	font-family: 'Poiret One', sans-serif;
+	font-weight: 400;
+	font-size: 3rem;
+	text-align: center;
+	color: #f1d3bc;
+	background-color: #262534;
+	padding: 6px;
+	text-transform: lowercase;
+
+
+}
+
+#bag {
+	margin-bottom: 5rem;
+	float: none;
+	padding: 0;
+}
