@@ -1,7 +1,8 @@
 //Check off items with a click
 	$("ul").on("click", "li", function(){
-		$(this).toggleClass("completed");
-	});
+		$(this).toggleClass("completed").addClass("selected");
+		
+		});
 
 //Click on the X to remove item
 	$("ul").on("click", "span", function(event){
@@ -15,11 +16,18 @@
 $("#sortable").sortable();({   
 		placeholder: "ui-sortable-placeholder" 
     }); 
+ 
 
-$("button").click(function(){
-	$("#listitems").find(".completed").hide();
+$("#completed").on("click", function(){
+ 	$("li").not(".selected").hide();
+ 	$("li").filter(".selected").show();
 });
 
+
+
+$("#not-completed").click(function(){
+	$("li").filter(".selected").hide();
+});
 
 
 
