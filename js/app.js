@@ -19,17 +19,21 @@ $("#sortable").sortable();({
  
 
 $("#completed").on("click", function(){
+ 	$(".selected").show();
  	$("li").not(".selected").hide();
- 	$("li").filter(".selected").show();
 });
 
 
 
-$("#not-completed").click(function(){
-	$("li").filter(".selected").hide();
+$("#not-completed").on("click", function(){
+	$(".selected").hide();
+	$("li").not(".selected").show();
+
 });
 
-
+$("#reset").click(function(){
+	$("li").show();
+});
 
 
 //Add a new item
